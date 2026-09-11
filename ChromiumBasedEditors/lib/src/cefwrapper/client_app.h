@@ -267,7 +267,9 @@ public:
 #endif
 			command_line->AppendSwitch("--disable-plugins");
 			command_line->AppendSwitch("--enable-file-cookies");
+#ifndef _WIN32
 			command_line->AppendSwitch("--disable-pinch");
+#endif
 			command_line->AppendSwitch("--enable-aggressive-domstorage-flushing");
 			command_line->AppendSwitch("--enable-color-correct-rendering");
 			command_line->AppendSwitchWithValue("--log-severity", "disable");
@@ -395,7 +397,9 @@ public:
 #endif
 			command_line->AppendSwitch("--disable-plugins");
 			command_line->AppendSwitch("--enable-file-cookies");
+#ifndef _WIN32
 			command_line->AppendSwitch("--disable-pinch");
+#endif
 			command_line->AppendSwitch("--enable-aggressive-domstorage-flushing");
 			command_line->AppendSwitch("--enable-color-correct-rendering");
 			command_line->AppendSwitchWithValue("--log-severity", "disable");
@@ -460,7 +464,9 @@ public:
 #endif
 			command_line->AppendSwitch("--disable-plugins");
 			command_line->AppendSwitch("--enable-file-cookies");
+#ifndef _WIN32
 			command_line->AppendSwitch("--disable-pinch");
+#endif
 			command_line->AppendSwitch("--enable-aggressive-domstorage-flushing");
 			command_line->AppendSwitch("--enable-color-correct-rendering");
 			command_line->AppendSwitchWithValue("--log-severity", "disable");
